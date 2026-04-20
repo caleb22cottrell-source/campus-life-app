@@ -49,3 +49,38 @@ h1, h3, h4 {
 .navbar .nav-link {
   margin: 0 8px;
 }
+
+.timer-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.timer-box {
+  flex: 1;
+  background: #0b0a0a;
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  border-left: 5px solid #0d6efd;
+  text-align: center;
+}
+
+
+.timer-box h5 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#countdown,
+#mealStatus {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+  .timer-row {
+    flex-direction: column;
+  }
+}
